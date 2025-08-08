@@ -1,0 +1,40 @@
+//  Footer Section Begin
+include constants
+html
+  head
+  body
+    footer.footer-section
+      .container
+        //.partner-logo.owl-carousel
+        //  a.pl-table(href='#')
+        //    .pl-tablecell
+        //      img(src='img/partner-logo/logo-1.png' alt)
+        .row
+          .col-lg-12
+            .footer-text
+              .ft-logo
+                a.footer-logo(href='#')
+                  img(src='img/footer/BCID_footer.png' alt)
+                  img(src='img/klc_w.png' alt)
+              ul
+                li
+                  a(href='./index.html') Home
+                li
+                  a(href='./contact.html') Contact
+                //li
+                //  a(href=rulebook_link) Documents
+
+              .copyright-text
+                p
+                  | Copyright ©
+                  script document.write(new Date().getFullYear());
+                  | #{society_name}
+                  i.fa.fa-heart(aria-hidden='true')
+              .ft-social
+                a(href='#{facebook_link}')
+                  i.fa.fa-facebook
+                a(href='#{instagram_link}')
+                  i.fa.fa-instagram
+                a(href='#{youtube_link}')
+                  i.fa.fa-youtube-play
+    //  Footer Section End 

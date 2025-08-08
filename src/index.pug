@@ -1,0 +1,44 @@
+doctype html
+html(lang='en')
+
+    include templates/head
+    include templates/preloader
+    include templates/constants
+
+    //header
+    //include templates/header_template
+    //  Header Section Begin
+    html
+        head
+        body
+            header.header-section
+                .container
+                    .logo
+                        a(href='./index.html')
+                            img(src='img/klc_name_sm.png' alt='KAMLOOPS LONGBOARD CLUB')
+                    .nav-menu
+                        nav.mainmenu.mobile-menu
+                            ul
+                                li.active
+                                    a(href='./index.html') Home
+                                li
+                                    a(href='./contact.html') Contact
+                    #mobile-menu-wrap
+            //  Header End
+    //hero
+    include templates/hero_template
+    //contact
+    include templates/contact_general_template
+    //footer
+    include templates/footer_template
+
+    //Js
+// Js Plugins
+script(src='js/jquery-3.3.1.min.js')
+script(src='js/bootstrap.min.js')
+script(src='js/jquery.magnific-popup.min.js')
+script(src='js/jquery.countdown.min.js')
+script(src='js/jquery.slicknav.js')
+script(src='js/owl.carousel.min.js')
+script(src='js/main.js')
+    //include templates/index_test
